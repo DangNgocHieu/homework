@@ -1,8 +1,8 @@
 body{
-    width: 1200px;
+    width: 100%;
 }
 #banner{
-    width: 1349px;
+    width: 100%;
     height: 500px;
     background-image: url("../fileanh/images.jpg");
     border-radius: 100px;
@@ -32,15 +32,84 @@ body{
     text-align: center;
     margin: 0;
 }
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+    #banner{
+     width: 100%;
+    }
+    #image-one .image img{
+        height: 150px;
+    }
+    #image-one{
+        width: 100%;
+        height: 305px;
+    }
+    #image-one .image {
+        width: 80%;
+    }
+    #image-one .image p{
+        width: 100%;
+    }
+    #image-tow{
+        width: 100%;
+    }
+    #image-tow .image {
+        width: 80%;
+    }
+    #image-tow .image p{
+        width: 100%;
+    }
+    #image-three{
+        width: 100%;
+    }
+    #image-three .image {
+        width: 80%;
+    }
+    #image-three .image p{
+        width: 100%;
+    }
+    #footer .footer-header{
+        width: 100%;
+    }
+    #footer .footer-header .footer-header-child{
+        width: 40%;
+    }
+    #footer .footer-header .footer-header-child .a{
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+    #footer .footer-header-child h1{
+        font-size: 25px;
+    }
+    #footer .footer-header .footer-header-child p{
+        padding :10px 0;
+    }
+    #footer .btn-three .include .left .table{
+        top:7%;
+    }
+    #footer .btn-three .include .left .table .td img{
+        width: 20px;
+        height: 20px;
+    }
+    #footer .btn-three .include .right .support .p  p{
+        font-size: 20px;
+    }
+    #footer .btn-three .include .right .support .p img{
+        width: 20px;
+        height: 20px;
+    }
+}
 #menu{
     margin: 0 auto;
     height: 250px;
     position: relative;
-    width: 1349px;
+    width: 100%;
 
 }
 .topic{
-    width: 1349px;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -51,7 +120,7 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
-    width: 1000px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -78,9 +147,8 @@ body{
     display: flex;
     justify-content: center;
 }
-
 #image-one{
-    width: 1349px;
+    width: 100%;
     position: relative;
     height: 350px;
     margin: 0 auto;
@@ -91,15 +159,16 @@ body{
     transform: rotate(90deg);
     width: 100px;
     height: 10px;
-    line-height: 10px;
     position: absolute;
-    left: -120px;
-    top: 70px;
+    line-height: 10px;
+    left: -500px;
+    top: 445px;
     font-size: 10px;
+    color: red;
 }
 
 #image-one .image{
-    width: 1000px;
+    width: 80%;
     /*background: yellow;*/
     height: 350px;
     float: left;
@@ -109,9 +178,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-
+#image-one .image img{
+    width: 100%;
+    height: 245px;
+}
 #image-tow{
-    width: 1349px;
+    width: 100%;
     position: relative;
     height: 350px;
     margin: 0 auto;
@@ -120,7 +192,7 @@ body{
 }
 
 #image-tow .image{
-    width: 1000px;
+    width: 80%;
     height: 350px;
     float: left;
     position: relative;
@@ -129,9 +201,13 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+#image-tow .image img{
+    width: 100%;
+    height: 245px;
+}
 
 #image-three{
-    width: 1349px;
+    width: 100%;
     position: relative;
     height: 350px;
     margin: 0 auto;
@@ -140,7 +216,7 @@ body{
 }
 
 #image-three .image{
-    width: 1000px;
+    width: 80%;
     /*background: yellow;*/
     height: 350px;
     float: left;
@@ -150,6 +226,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+#image-three .image img{
+    width: 100%;
+    height: 245px;
+}
 #space{
     width: 1349px;
 
@@ -157,15 +237,16 @@ body{
     height: 200px;
 }
 #footer{
-    width: 1349px;
+    width: 100%;
     height: 700px;
 
 }
 #footer .footer-header{
-    width: 1349px;
+    width: 100%;
     height: 300px;
     /*border: 1px solid #000000;*/
     background-image: url("../fileanh/images.jpg");
+
     display: flex;
     justify-content: center;
     position: relative;
@@ -175,7 +256,12 @@ body{
     text-align: center;
     /*color: white;*/
     padding-top: 10px;
+    width: 40%;
     /*border: 1px solid black;*/
+}
+#footer .footer-header .footer-header-child p{
+    margin-top:10px;
+    margin-bottom: 30px;
 }
 #footer .footer-header .footer-header-child a{
     border: 3px solid white;
@@ -183,21 +269,25 @@ body{
     padding: 10px 140px;
     font-size: 24px;
     color: white;
+    text-decoration: none;
 }
-#footer .footer-header .a{
-    transform: rotate(90deg);
-    /*border: 1px solid black;*/
-    width: 100px;
-    height: 10px;
-    line-height: 10px;
-    position: absolute;
-    font-size: 10px;
-    left: 55px;
-    top: 81px;
+#footer .footer-header-child .a{
+    /*width: 200px;*/
 }
+/*#footer .footer-header .a{*/
+/*    transform: rotate(90deg);*/
+/*    !*border: 1px solid black;*!*/
+/*    width: 20px;*/
+/*    height: 10px;*/
+/*    line-height: 10px;*/
+/*    position: absolute;*/
+/*    font-size: 10px;*/
+/*    left: 55px;*/
+/*    top: 81px;*/
+/*}*/
 #footer .footer-bottom {
     background-color: dimgrey;
-    width: 1349px;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -212,7 +302,7 @@ body{
     justify-content: center;
 }
 #footer .footer-bottom .btn-button{
-    width: 1000px;
+    width: 90%;
     height: 150px;
     /*background-color: red;*/
     display: flex;
@@ -221,9 +311,9 @@ body{
     float: left;
 }
 #footer .footer-bottom .btn-button .button{
-    width: 300px;
+    width: 30%;
     height: 60px;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     box-sizing: border-box;
     position: relative;
     top: 70px;
@@ -231,7 +321,7 @@ body{
 
 #footer .footer-bottom .btn-one a{
     border: 3px solid white;
-    width: 300px;
+    width: 100%;
     height: 60px;
     box-sizing: border-box;
     text-align: center;
@@ -247,18 +337,18 @@ body{
     justify-content: center;
 }
 #footer .btn-tow .btn-button-tow .btn{
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: center;
 }
 #footer .btn-tow .btn-button-tow .btn a{
-    width: 1000px;
+    width: 90%;
     height: 60px;
     box-sizing: border-box;
     border: 3px solid white;
     text-align: center;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -268,7 +358,7 @@ body{
     justify-content: center;
 }
 #footer .btn-three .include{
-    width: 1000px;
+    width: 90%;
     height:  300px;
     position: relative;
     display: flex;
@@ -279,7 +369,6 @@ body{
 #footer .btn-three .include .left{
     width: 50%;
     height: 300px;
-
     display: flex;
     justify-content: center;
     position: relative;
@@ -287,12 +376,12 @@ body{
 }
 #footer .btn-three .include .left .table{
     position: absolute;
-    top: 20%;
+    top: 7%;
     box-sizing: border-box;
     color: black;
     border-collapse: collapse;
     border: 2px solid black;
-    width: 400px;
+    width: 50%;
     height: 200px;
     font-size: 15px;
 }
@@ -328,7 +417,7 @@ body{
 #footer .btn-three .include .right .content{
     /*display: flex;*/
     /*flex-direction: row;*/
-    width: 400px;
+    width: 80%;
     height: 60px;
     float: left;
 }
@@ -339,20 +428,35 @@ body{
     padding-left: 20px;
 }
 #footer .btn-three .include .right .address{
-    width: 400px;
+    width: 80%;
     height: 100px;
     float: left;
 }
 #footer .btn-three .include .right .support{
-    width: 400px;
+    width: 80%;
     height: 40px;
     float: left;
 }
-#footer .btn-three .include .right .support p{
+@media screen and (max-width: 600px){
+
+    #footer .btn-three .include .right .support .p  p{
+        font-size: 20px;
+    }
+    #footer .btn-three .include .right .support .p img{
+        width: 20px;
+        height: 20px;
+    }
+}
+#footer .btn-three .include .right .support  p{
     float: left;
     font-size: 40px;
     margin: 0 10px;
     box-sizing: border-box;
+}
+#footer .btn-three .include .right .support img{
+    width: 46px;
+    height: 46px;
+    float: left;
 }
 .footer-bottom .footer {
     width: 1349px;
